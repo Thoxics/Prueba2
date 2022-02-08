@@ -1,13 +1,10 @@
+cd D:
+cd D:\Universidad\11 Cuatrimestre\Test\Prueba 2_rama 2
 git add .
-
-echo 'Ingresa el nombre del commit:'
-read commitMessage
-
-git commit -m "$commitMessage"
-
-echo 'Ingresa el nombre de la rama:'
-read branch
-
-git push origin $branch
-
-read
+@echo off
+set /p commitMessage=Ingresa el mensaje del commit:
+git commit -m "%commitMessage%"
+set /p branch=Ingresa el nombre de la rama:
+git push origin %banch%
+pause
+exit
